@@ -1,0 +1,26 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "author": "Jerry <1424478294@qq.com>",
+  "homepage": "https://github.com/Haku96/lerna-playground#readme",
+  "license": "MIT",
+  "main": "lib/typescript.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haku96/lerna-playground.git"
+  },
+  "scripts": {},
+  "bugs": {
+    "url": "https://github.com/Haku96/lerna-playground/issues"
+  }
+}
