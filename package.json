@@ -3,13 +3,32 @@
   "version": "1.0.0",
   "description": "lerna-playground",
   "main": "index.js",
-  "scripts": {},
+  "packageManager": "pnpm@9.7.0",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "keywords": [
     "playground"
   ],
   "author": "Haku96",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^8.1.8"
+    "@antfu/eslint-config": "^3.8.0",
+    "@types/node": "^22.8.6",
+    "eslint": "^9.13.0",
+    "lerna": "^8.1.8",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "catalog:"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
